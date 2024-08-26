@@ -42,16 +42,19 @@ public class HealthSystem extends JavaPlugin implements Listener {
 	if player health is equal less than Configuration value add 1 health point to player.*/
 	@EventHandler
 	public void onPlayerInteract(PlayerInteractEvent event) {
-		if (event.getHand() == EquipmentSlot.HAND && event.getItem().getType() == Material.TOTEM_OF_UNDYING &&
-				event.getAction() == Action.RIGHT_CLICK_AIR || event.getAction() == Action.RIGHT_CLICK_BLOCK) {
-			Player player = event.getPlayer();
-			ItemStack item = event.getItem();
-			double health = player.getHealthScale();
-			if (health <= 20.0) {
-				player.getInventory().removeItem(item);
-				player.setHealthScale(health + 2);
-			} else {
-				player.sendRawMessage("&4BRUTAL &8-&r Tidak bisa melebihi dari max health player");
+		if (event.getHand() == EquipmentSlot.HAND && event.getItem().getType() == Material.TOTEM_OF_UNDYING) {
+			if (event.getAction() == Action.RIGHT_CLICK_AIR || event.getAction() == Action.RIGHT_CLICK_BLOCK) {
+				Player player = event.getPlayer();
+				ItemStack item = event.getItem();
+				AttributeInstance health = player.getAttribute(Attribute.GENERIC_MAX_HEALTH);
+				double baseHealth = health.getBaseValue();
+				if (baseHealth < 20.0) {
+					player.getInventory().removeItem(item);
+					player.playEffect(EntityEffect.TOTEM_RESURRECT);
+					health.setBaseValue(baseHealth + 2.0);
+				} else {
+					player.sendMessage("BRUTAL - Tidak bisa melebihi dari max health player");
+				}
 			}
 		}
 	}
