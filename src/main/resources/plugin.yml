@@ -1,6 +1,6 @@
-name: BrutalLegends-HealthSystem
+name: BrutalLegend-HealthSystem
 author: Phanisment
-main: io.phanisment.brutallegend.HealtSystem
-description: Remaking of Health System on Minecraft SMP Indonesia, Brutal Legends 
-version: 1.0
+main: io.phanisment.brutal.HealthSystem
+description: Remake of Health System in Brutal Legends
+version: 1.20.1-0.1-BETA
 api-version: 1.18
