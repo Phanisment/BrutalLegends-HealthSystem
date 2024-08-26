@@ -30,11 +30,12 @@ public class HealthSystem extends JavaPlugin implements Listener {
 	@EventHandler
 	public void onPlayerRespawn(PlayerRespawnEvent event) {
 		Player player = event.getPlayer();
-		double health = player.getHealthScale();
-		if (health > 1) {
-			player.setHealthScale(health - 2);
+		AttributeInstance health = player.getAttribute(Attribute.GENERIC_MAX_HEALTH);
+		double baseHealth = health.getBaseValue();
+		if (baseHealth > 1.0) {
+			health.setBaseValue(baseHealth - 2.0);
 		} else {
-			player.setHealthScale(1.0);
+			health.setBaseValue(2.0);
 		}
 	}
 	
