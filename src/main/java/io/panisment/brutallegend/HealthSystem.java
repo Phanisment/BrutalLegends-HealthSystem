@@ -1,8 +1,11 @@
 package io.phanisment.brutallegend;
 
+import org.bukkit.EntityEffect;
+import org.bukkit.Particle;
 import org.bukkit.ChatColor;
-import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.attribute.Attribute;
+import org.bukkit.attribute.AttributeInstance;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.EquipmentSlot;
 import org.bukkit.Material;
