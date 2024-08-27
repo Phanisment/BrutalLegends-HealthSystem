@@ -15,6 +15,6 @@ public class HealthSystem extends JavaPlugin {
 		getServer().getPluginManager().registerEvents(new PlayerInteraction(), this);
 		getServer().getPluginManager().registerEvents(new PlayerRespawn(), this);
 		getServer().getPluginManager().registerEvents(new EvokerDeath(), this);
-		getServer().getPluginManager().registerEvents(new DisableTotem(), this);
+		getServer().getPluginManager().registerEvents(new DisableTotem(this), this);
 	}
 }
