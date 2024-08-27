@@ -4,7 +4,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.entity.EntityResurrectEvent;
 
-import io.phanisment.brutal.HealthSystem
+import io.phanisment.brutal.HealthSystem;
 
 public class DisableTotem implements Listener{
 	private final HealthSystem plugin;
