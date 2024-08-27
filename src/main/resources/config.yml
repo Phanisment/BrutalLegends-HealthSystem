@@ -1,1 +1,22 @@
 
+# © Phanisment | 2024
+# Thanks for download this Plugin, if you has
+# questions or error, just ask me in discord.
+
+# Discord: https://discord.com/invite/grJCgRHKvg
+
+Disable_Vanilla_System:
+  Disable_Totem_Function: true
+  Disable_Evoker_Drop: true
+
+Custom_System:
+  Totem_of_Undying:
+    Enable: true
+    Max_Use_Per_Hours: 3 # set 0 to disable
+    Maximum_Health_Player: 20 # = 10 Health Max Point
+  Evoker_Drops:
+    Enable: true
+    Chance: 0.1
+
+System_Message:
+  Max_Use_Totem: "..."
