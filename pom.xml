@@ -4,14 +4,7 @@
   <groupId>io.phanisment</groupId>
   <artifactId>health-system</artifactId>
   <version>1.20.1-0.1-ALPHA</version>
-  <name>health-system</name>
-  <url>https://github.com/Phanisment/BrutalLegends-HealthSystem</url>
-  <distributionManagement>
-    <repository>
-      <id>healthsystem</id>
-      <url>https://github.com/Phanisment/BrutalLegends-HealthSystem</url>
-    </repository>
-  </distributionManagement>
+  <name>HealthSystem</name>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
@@ -60,6 +53,7 @@
     </dependency>
   </dependencies>
   <properties>
+    <project.codename>HealthSystem</project.codename>
     <maven.compiler.target>8</maven.compiler.target>
     <maven.compiler.source>8</maven.compiler.source>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
