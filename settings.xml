@@ -1,7 +1,7 @@
 <servers>
   <server>
-    <id>io.phanisment</id>
-    <username>${env.USERNAME}</username>
-    <password>${env.TOKEN}</password>
+    <id>healthsystem</id>
+    <username>${env.GITHUB_USERNAME}</username>
+    <password>${env.GITHUB_TOKEN}</password>
   </server>
 </servers>
