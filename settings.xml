@@ -1,0 +1,7 @@
+<servers>
+  <server>
+    <id>io.phanisment</id>
+    <username>${env.USERNAME}</username>
+    <password>${env.TOKEN}</password>
+  </server>
+</servers>
