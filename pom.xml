@@ -4,6 +4,14 @@
   <groupId>io.phanisment</groupId>
   <artifactId>health-system</artifactId>
   <version>1.20.1-0.1-ALPHA</version>
+  <name>Your Project Name</name>
+  <url>https://github.com/Phanisment/BrutalLegends-HealthSystem</url>
+  <distributionManagement>
+    <repository>
+      <id>healthsystem</id>
+      <url>https://github.com/Phanisment/BrutalLegends-HealthSystem</url>
+    </repository>
+  </distributionManagement>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
