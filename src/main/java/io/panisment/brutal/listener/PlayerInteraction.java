@@ -22,7 +22,7 @@ import io.phanisment.brutal.HealthSystem;
 
 public class PlayerInteraction implements Listener {
 	private final HealthSystem plugin;
-	private final HashMap<UUID, integer> usedAmount;
+	private final HashMap<UUID, Integer> usedAmount;
 	
 	public PlayerInteraction(HealthSystem plugin) {
 		this.plugin = plugin;
@@ -32,7 +32,7 @@ public class PlayerInteraction implements Listener {
 	@EventHandler
 	public void onPlayerInteract(PlayerInteractEvent event) {
 		double MAX_HEALTH = this.plugin.getConfig().getDouble("Custom_System.Totem_of_Undying.Max_Health");
-		if (event.getHand() == EquipmentSlot.HAND && event.getItem().getType() == Material.TOTEM_OF_UNDYING && MAX_HEALTH != null) {
+		if (event.getHand() == EquipmentSlot.HAND && event.getItem().getType() == Material.TOTEM_OF_UNDYING && MAX_HEALTH > 1.0) {
 			if (event.getAction() == Action.RIGHT_CLICK_AIR || event.getAction() == Action.RIGHT_CLICK_BLOCK) {
 				Player player = event.getPlayer();
 				ItemStack item = event.getItem();
