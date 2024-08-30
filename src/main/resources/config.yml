@@ -11,8 +11,8 @@ Disable_Vanilla_System:
 Custom_System:
   Totem_of_Undying:
     Enable: true
-    Add_Health: 2
-    Max_Health: 20
+    Add_Health: 2.0
+    Max_Health: 20.0
     Max_Usage_Per_Hours: 3 # set 0 to disable.
   Evoker_Drops:
     Enable: true
@@ -20,9 +20,10 @@ Custom_System:
     # Custom Item is next update(mybe).
   Health_System:
     Enable: true
+    Reduce_Health: 2.0
     Force_Health: # Use this if you use Plugin AuraSkill.
       Enable: false
-      Max_Health: 20
+      Max_Health: 20.0
 
 System_Message:
   Max_Use_Totem: "&4&lBRUTAL &4&l/&r You can't use Totem of Undying more than 20 Health Point."
