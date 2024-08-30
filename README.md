@@ -19,7 +19,7 @@ Form plugin:
 
 Vanilla:
 `/attributes @s minecraft:GENERIC_MAX_HEALTH base set <value>`
-> For set health of player.
+> For set health of player. [(Minecraft Wiki)](https://minecraft.wiki/w/Attribute)
 
 `/pardon <player>`
 > Unban player.
