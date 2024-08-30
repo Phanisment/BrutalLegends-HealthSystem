@@ -14,12 +14,12 @@
 > you wonder why there is only 1 command? because im tired.
 
 Form plugin:
-- `/hsreload`
+`/hsreload`
 > Reload file configuration
 
 Vanilla:
-- `/attributes @s minecraft:GENERIC_MAX_HEALTH base set <value>`
+`/attributes @s minecraft:GENERIC_MAX_HEALTH base set <value>`
 > For set health of player.
 
-- `/pardon <player>`
+`/pardon <player>`
 > Unban player.
