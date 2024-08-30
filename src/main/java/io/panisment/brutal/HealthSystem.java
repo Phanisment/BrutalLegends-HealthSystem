@@ -11,7 +11,7 @@ public class HealthSystem extends JavaPlugin {
 	@Override
 	public void onEnable() {
 		getLogger().info("Plugin enabled!");
-		getConfig().saveConfig();
+		saveDefaultConfig();
 		
 		getServer().getPluginManager().registerEvents(new PlayerInteraction(this), this);
 		getServer().getPluginManager().registerEvents(new PlayerRespawn(this), this);
