@@ -24,10 +24,13 @@ public class EvokerDeath implements Listener {
 		boolean ENABLE = this.plugin.getConfig().getBoolean("Disable_Vanilla_System.Disable_Evoker_Drop");
 		if (event.getEntityType() == EntityType.EVOKER && ENABLE == true) {
 			event.getDrops().clear();
-			double dropChance = 0.1;
-			if (random.nextDouble() <= dropChance) {
-				ItemStack totem = new ItemStack(Material.TOTEM_OF_UNDYING);
-				event.getDrops().add(totem);
+			boolean CUSTOM_DROP = this.plugin.getConfig().getBoolean("Custom_System.Evoker_Drops.Enable");
+			if (CUSTOM_DROP == true) {
+				double dropChance = this.plugin.getConfig().getDouble("Custom_System.Evoker_Drops.Chance");
+				if (random.nextDouble() <= dropChance) {
+					ItemStack totem = new ItemStack(Material.TOTEM_OF_UNDYING);
+					event.getDrops().add(totem);
+				}
 			}
 		}
 	}
