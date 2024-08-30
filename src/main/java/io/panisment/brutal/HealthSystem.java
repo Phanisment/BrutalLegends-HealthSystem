@@ -12,9 +12,9 @@ public class HealthSystem extends JavaPlugin {
 	public void onEnable() {
 		getLogger().info("Plugin enabled!");
 		
-		getServer().getPluginManager().registerEvents(new PlayerInteraction(), this);
-		getServer().getPluginManager().registerEvents(new PlayerRespawn(), this);
-		getServer().getPluginManager().registerEvents(new EvokerDeath(), this);
-		getServer().getPluginManager().registerEvents(new DisableTotem(), this);
+		getServer().getPluginManager().registerEvents(new PlayerInteraction(this), this);
+		getServer().getPluginManager().registerEvents(new PlayerRespawn(this), this);
+		getServer().getPluginManager().registerEvents(new EvokerDeath(this), this);
+		getServer().getPluginManager().registerEvents(new DisableTotem(this), this);
 	}
 }
