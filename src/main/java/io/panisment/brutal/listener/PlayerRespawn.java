@@ -23,8 +23,9 @@ public class PlayerRespawn implements Listener {
 			Player player = event.getPlayer();
 			AttributeInstance health = player.getAttribute(Attribute.GENERIC_MAX_HEALTH);
 			double baseHealth = health.getBaseValue();
+			double reduceHealth = this.plugin.getConfig().getDouble("Custom_System.Health_System.Reduce_Health");
 			if (baseHealth > 1.0) {
-				health.setBaseValue(baseHealth - 2.0);
+				health.setBaseValue(baseHealth - reduceHealth);
 			} else {
 				health.setBaseValue(2.0);
 			}
