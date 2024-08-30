@@ -19,7 +19,7 @@ public class PlayerRespawn implements Listener {
 	@EventHandler
 	public void onPlayerRespawn(PlayerRespawnEvent event) {
 		boolean ENABLE = this.plugin.getConfig().getBoolean("Custom_System.Health_System.Enable");
-		if (ENABLE = true || ENABLE != null) {
+		if (ENABLE == true || ENABLE != null) {
 			Player player = event.getPlayer();
 			AttributeInstance health = player.getAttribute(Attribute.GENERIC_MAX_HEALTH);
 			double baseHealth = health.getBaseValue();
