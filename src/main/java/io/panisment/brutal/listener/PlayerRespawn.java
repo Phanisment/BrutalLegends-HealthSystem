@@ -36,7 +36,7 @@ public class PlayerRespawn implements Listener {
 	}
 	
 	private void banPlayer(Player player) {
-		BanList banList = getServer().getBanList(BanList.Type.NAME);
+		BanList banList = this.plugin.getServer().getBanList(BanList.Type.NAME);
 		banList.addBan(player.getName(), "You're banned form server because your health is empty.", null, null);
 		player.kickPlayer("You're banned form server because your health is empty.");
 	}
