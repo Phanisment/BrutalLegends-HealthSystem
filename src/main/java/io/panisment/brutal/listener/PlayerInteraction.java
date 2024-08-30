@@ -44,7 +44,7 @@ public class PlayerInteraction implements Listener {
 					int used = usedAmount.getOrDefault(playerUUID, 0);
 					int maxUse = this.plugin.getConfig().getInt("Custom_System.Totem_of_Undying.Max_Usage_Per_Hours");
 					
-					if (maxUse != 0) {
+					if (maxUse > 0) {
 						if (used < maxUse) {
 							usedAmount.put(playerUUID, used + 1);
 							player.getInventory().setItemInMainHand(null);
