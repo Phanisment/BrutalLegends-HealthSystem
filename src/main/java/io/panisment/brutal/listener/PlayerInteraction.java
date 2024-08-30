@@ -59,8 +59,8 @@ public class PlayerInteraction implements Listener {
 							player.sendMessage(ChatColor.translateAlternateColorCodes('&', MAX_USED_MESSAGE));
 						}
 					}
-				} else if (MAX_MESSAGE != "") {
 					String MAX_MESSAGE = this.plugin.getConfig().getString("System_Message.Max_Use_Totem");
+				} else if (MAX_MESSAGE != "") {
 					player.sendMessage(ChatColor.translateAlternateColorCodes('&', MAX_MESSAGE));
 				}
 			}
