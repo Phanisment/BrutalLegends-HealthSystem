@@ -7,7 +7,7 @@
 - Disable Evoker drop and make custom drop for Evoker
 - Make totem as Hearth
 - Limit totem use as hearth
-- Force Health(For Support AuraSkill)
+- Force Health(For Support [AuraSkill](https://modrinth.com/plugin/auraskills) but not implemented yet)
 
 ## Commands
 
