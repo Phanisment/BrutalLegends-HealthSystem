@@ -22,7 +22,7 @@ public class EvokerDeath implements Listener {
 	@EventHandler
 	public void onEvokerDeath(EntityDeathEvent event) {
 		Boolean ENABLE = this.plugin.getConfig().getBoolean("Disable_Vanilla_System.Disable_Evoker_Drop");
-		if (event.getEntityType() == EntityType.EVOKER && ENABLE_EVOKER = true) {
+		if (event.getEntityType() == EntityType.EVOKER && ENABLE = true) {
 			event.getDrops().clear();
 			double dropChance = 0.1;
 			if (random.nextDouble() <= dropChance) {
