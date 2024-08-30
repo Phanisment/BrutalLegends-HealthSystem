@@ -56,7 +56,7 @@ public class PlayerInteraction implements Listener {
 							health.setBaseValue(baseHealth + addHealth);
 						} else {
 							String MAX_USED_MESSAGE = this.plugin.getConfig().getString("System_Message.Max_Usage_Totem");
-							player.sendMessage(ChatColor.translateAlternateColorCodes('&', ))
+							player.sendMessage(ChatColor.translateAlternateColorCodes('&', MAX_USED_MESSAGE));
 						}
 					}
 				} else if (MAX_MESSAGE != null) {
