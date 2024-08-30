@@ -4,8 +4,10 @@
 name: Java CI with Maven
 
 on:
-  release:
-    type: [created]
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
   build:
