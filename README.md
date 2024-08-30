@@ -10,12 +10,15 @@
 - Force Health(For Support AuraSkill)
 
 ## Commands
+
 > ![NOTE]
 > you wonder why there is only 1 command? because im tired.
 
+### Plugin:
 `/hsreload`
 > Reload file configuration
 
+### Vanilla:
 `/attributes @s minecraft:GENERIC_MAX_HEALTH base set <value>`
 > For set health of player. [(Minecraft Wiki)](https://minecraft.wiki/w/Attribute)
 
