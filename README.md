@@ -1,6 +1,11 @@
 # Health System
 > Concept this plugin is same as Life Steal but have some modified like use totem as hearth and make totem even harder.
 
+> Tested only on Paper 1.20.1, I don't know if it can use higher version so just try it.
+
+> ![NOTE]
+> If the update takes a long time, please excuse me because this is my first plugin that I made via only handphone.
+
 ## Features
 - Health reduce when death
 - Disable Totem function
@@ -16,7 +21,7 @@
 ### Totem of Undying:
 - You can't use totem as normally minecraft because the function is use as heart but you can disbale/enable it on configuration.
 
-### Totem Linimitation Usage:
+### Totem Limitation Usage:
 - You can't use totem more than 3 times, You can change it in configuration but if you want disable it, make the value to 0.
 
 ### Evoker Drops:
