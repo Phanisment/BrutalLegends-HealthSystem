@@ -13,7 +13,16 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 
+import io.phanisment.brutal.HealthSystem;
+
 public class PlayerInteraction implements Listener {
+	private final HealthSystem plugin;
+	
+	public PlayerInteraction(HealthSystem plugin) {
+		this.plugin = plugin
+	}
+	
+	
 	@EventHandler
 	public void onPlayerInteract(PlayerInteractEvent event) {
 		if (event.getHand() == EquipmentSlot.HAND && event.getItem().getType() == Material.TOTEM_OF_UNDYING) {
