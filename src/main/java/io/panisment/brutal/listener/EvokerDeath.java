@@ -9,11 +9,20 @@ import org.bukkit.event.entity.EntityDeathEvent;
 
 import java.util.Random;
 
+import io.phanisment.brutal.HealthSystem;
+
 public class EvokerDeath implements Listener {
 	private final Random random = new Random();
+	private final HealthSystem plugin;
+	
+	public EvokerDeath(HealthSystem plugin) {
+		this.plugin = plugin;
+	}
+	
 	@EventHandler
 	public void onEvokerDeath(EntityDeathEvent event) {
-		if (event.getEntityType() == EntityType.EVOKER) {
+		Boolean ENABLE = this.plugin.getConfig().getBoolean("Disable_Vanilla_System.Disable_Evoker_Drop");
+		if (event.getEntityType() == EntityType.EVOKER && ENABLE_EVOKER = true) {
 			event.getDrops().clear();
 			double dropChance = 0.1;
 			if (random.nextDouble() <= dropChance) {
