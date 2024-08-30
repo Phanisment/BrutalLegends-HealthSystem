@@ -24,7 +24,7 @@ public class PlayerInteraction implements Listener {
 	
 	@EventHandler
 	public void onPlayerInteract(PlayerInteractEvent event) {
-		Double MAX_HEALTH = this.plugin.getConfig().getBoolean("Custom_System.Totem_of_Undying.Max_Health");
+		Double MAX_HEALTH = this.plugin.getConfig().getDouble("Custom_System.Totem_of_Undying.Max_Health");
 		if (event.getHand() == EquipmentSlot.HAND && event.getItem().getType() == Material.TOTEM_OF_UNDYING && MAX_HEALTH != null) {
 			if (event.getAction() == Action.RIGHT_CLICK_AIR || event.getAction() == Action.RIGHT_CLICK_BLOCK) {
 				Player player = event.getPlayer();
