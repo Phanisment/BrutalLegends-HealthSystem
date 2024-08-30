@@ -43,4 +43,4 @@ public class PlayerRespawn implements Listener {
 			player.kickPlayer("You're banned form server because your health is empty.");
 		}
 	}
-}.
+}
