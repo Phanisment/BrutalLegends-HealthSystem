@@ -5,6 +5,8 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.attribute.Attribute;
 import org.bukkit.attribute.AttributeInstance;
 import org.bukkit.entity.Player;
+import org.bukkit.BanList;
+import org.bukkit.BanList.Type;
 import org.bukkit.event.player.PlayerRespawnEvent;
 
 import io.phanisment.brutal.HealthSystem;
@@ -28,7 +30,9 @@ public class PlayerRespawn implements Listener {
 				health.setBaseValue(baseHealth - reduceHealth);
 			} else {
 				health.setBaseValue(20.0);
-				player.ban("Your are banned because your Health is empty", null, null, true);
+				BanList banList = getServer().getBanList(Type.NAME);
+				banList.addBan(playerName, "You're banned form server because your health is empty.", null, null);
+				player.kickPlayer("You're banned form server because your health is empty.");
 			}
 		}
 	}
