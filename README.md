@@ -9,7 +9,6 @@
 > [!NOTE]
 > If the update takes a long time, please excuse me because this is my first plugin that I made via only handphone.
 
-
 ## Features
 - Health reduce when death
 - Disable Totem function
