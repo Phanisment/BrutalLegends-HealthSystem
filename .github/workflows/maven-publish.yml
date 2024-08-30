@@ -5,7 +5,7 @@ name: Java CI with Maven
 
 on:
   release:
-    type: [prereleased, edited]
+    type: [published]
 
 jobs:
   build:
