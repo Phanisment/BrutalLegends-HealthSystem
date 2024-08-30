@@ -15,7 +15,7 @@ public class DisableTotem implements Listener{
 	
 	@EventHandler
 	public void onResurrect(EntityResurrectEvent event) {
-		Boolean ENABLE = this.plugin.getConfig().getBoolean("Disable_Vanilla_System.Disable_Totem_Function");
+		boolean ENABLE = this.plugin.getConfig().getBoolean("Disable_Vanilla_System.Disable_Totem_Function");
 		if (ENABLE == true) {
 			event.setCancelled(true);
 		}
