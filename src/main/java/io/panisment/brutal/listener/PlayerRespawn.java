@@ -30,17 +30,14 @@ public class PlayerRespawn implements Listener {
 				health.setBaseValue(baseHealth - reduceHealth);
 			} else {
 				health.setBaseValue(20.0);
-				banPlayer(player.getName());
+				banPlayer(player);
 			}
 		}
 	}
 	
-	private void banPlayer(String playerName) {
-		BanList banList = getServer().getBanList(Type.NAME);
-		banList.addBan(playerName, "You're banned form server because your health is empty.", null, null);
-		Player player = getServer().getPlayer(playerName);
-		if (player != null) {
-			player.kickPlayer("You're banned form server because your health is empty.");
-		}
+	private void banPlayer(Player player) {
+		BanList banList = getServer().getBanList(BanList.Type.NAME);
+		banList.addBan(player.getName(), "You're banned form server because your health is empty.", null, null);
+		player.kickPlayer("You're banned form server because your health is empty.");
 	}
 }
