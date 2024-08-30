@@ -11,7 +11,7 @@
 
 ## Commands
 
-> ![NOTE]
+> [!NOTE]
 > you wonder why there is only 1 command? because im tired.
 
 ### Plugin:
