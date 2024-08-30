@@ -26,5 +26,5 @@ Custom_System:
       Max_Health: 20.0
 
 System_Message:
-  Max_Use_Totem: "&4&lBRUTAL &4&l/&r You can't use Totem of Undying more than 20 Health Point."
-  Max_Usage_Totem: "&4&lBRUTAL &4&l/&r Your daily Totem of Undying usage is max, try again tomorrow." # If you use daily restart
+  Max_Use_Totem: "&4&lBRUTAL &8&l/&r You can't use Totem of Undying more than 20 Health Point."
+  Max_Usage_Totem: "&4&lBRUTAL &8&l/&r Your daily Totem of Undying usage is max, try again tomorrow." # If you use daily restart
