@@ -10,7 +10,7 @@
 - Force Health(For Support AuraSkill)
 
 ## Commands
-> ![TIPS] you wonder why there is only 1 command? because im tired.
+> ![NOTE] you wonder why there is only 1 command? because im tired.
 
 Form plugin:
 - `/hsreload`
