@@ -16,7 +16,7 @@
 ### Totem of Undying:
 - You can't use totem as normally minecraft because the function is use as heart but you can disbale/enable it on configuration.
 
-## Totem Linimitation Usage:
+### Totem Linimitation Usage:
 - You can't use totem more than 3 times, You can change it in configuration but if you want disable it, make the value to 0.
 
 ### Evoker Drops:
