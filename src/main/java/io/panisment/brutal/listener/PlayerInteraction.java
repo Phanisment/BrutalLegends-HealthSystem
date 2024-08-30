@@ -22,16 +22,16 @@ public class PlayerInteraction implements Listener {
 		this.plugin = plugin
 	}
 	
-	
 	@EventHandler
 	public void onPlayerInteract(PlayerInteractEvent event) {
-		if (event.getHand() == EquipmentSlot.HAND && event.getItem().getType() == Material.TOTEM_OF_UNDYING) {
+		Double MAX_HEALTH = this.plugin.getConfig().getBoolean("Custom_System.Totem_of_Undying.Max_Health");
+		if (event.getHand() == EquipmentSlot.HAND && event.getItem().getType() == Material.TOTEM_OF_UNDYING && MAX_HEALTH != null) {
 			if (event.getAction() == Action.RIGHT_CLICK_AIR || event.getAction() == Action.RIGHT_CLICK_BLOCK) {
 				Player player = event.getPlayer();
 				ItemStack item = event.getItem();
 				AttributeInstance health = player.getAttribute(Attribute.GENERIC_MAX_HEALTH);
 				double baseHealth = health.getBaseValue();
-				if (baseHealth < 20.0) {
+				if (baseHealth < MAX_HEALTH) {
 					player.getInventory().removeItem(item);
 					player.playEffect(EntityEffect.TOTEM_RESURRECT);
 					health.setBaseValue(baseHealth + 2.0);
