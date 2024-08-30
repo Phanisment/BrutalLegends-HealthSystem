@@ -27,7 +27,8 @@ public class PlayerRespawn implements Listener {
 			if (baseHealth > 1.0) {
 				health.setBaseValue(baseHealth - reduceHealth);
 			} else {
-				health.setBaseValue(2.0);
+				health.setBaseValue(20.0);
+				player.ban("Your are banned because your Health is empty", null, null, true);
 			}
 		}
 	}
