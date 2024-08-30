@@ -3,6 +3,7 @@ author: Phanisment
 main: io.phanisment.brutal.HealthSystem
 description: Remake of Health System in Brutal Legends
 version: ${project.version}
+api-version: 1.20
 commands:
   hsreload:
     permission: healthsystem.admin
