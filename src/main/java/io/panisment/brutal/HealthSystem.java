@@ -2,6 +2,7 @@ package io.phanisment.brutal;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
+import io.phanisment.brutal.ReloadCommand;
 import io.phanisment.brutal.listener.PlayerRespawn;
 import io.phanisment.brutal.listener.PlayerInteraction;
 import io.phanisment.brutal.listener.EvokerDeath;
@@ -12,6 +13,8 @@ public class HealthSystem extends JavaPlugin {
 	public void onEnable() {
 		getLogger().info("Plugin enabled!");
 		saveDefaultConfig();
+		
+		getCommand("hsreload").setExecutor(new ReloadCommand(this));
 		
 		getServer().getPluginManager().registerEvents(new PlayerInteraction(this), this);
 		getServer().getPluginManager().registerEvents(new PlayerRespawn(this), this);
