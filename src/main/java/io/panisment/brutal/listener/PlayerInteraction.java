@@ -38,7 +38,7 @@ public class PlayerInteraction implements Listener {
 				ItemStack item = event.getItem();
 				AttributeInstance health = player.getAttribute(Attribute.GENERIC_MAX_HEALTH);
 				double baseHealth = health.getBaseValue();
-				
+				String MAX_MESSAGE = this.plugin.getConfig().getString("System_Message.Max_Use_Totem");
 				if (baseHealth < MAX_HEALTH) {
 					UUID playerUUID = player.getUniqueId();
 					int used = usedAmount.getOrDefault(playerUUID, 0);
@@ -59,7 +59,6 @@ public class PlayerInteraction implements Listener {
 							player.sendMessage(ChatColor.translateAlternateColorCodes('&', MAX_USED_MESSAGE));
 						}
 					}
-					String MAX_MESSAGE = this.plugin.getConfig().getString("System_Message.Max_Use_Totem");
 				} else if (MAX_MESSAGE != "") {
 					player.sendMessage(ChatColor.translateAlternateColorCodes('&', MAX_MESSAGE));
 				}
