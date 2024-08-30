@@ -12,7 +12,7 @@ import io.phanisment.brutal.HealthSystem;
 public class PlayerRespawn implements Listener {
 	private final HealthSystem plugin;
 	
-	public RespawnListener(HealthSystem plugin) {
+	public PlayerRespawn(HealthSystem plugin) {
 		this.plugin = plugin;
 	}
 	
