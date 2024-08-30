@@ -50,7 +50,7 @@ public class PlayerInteraction implements Listener {
 							player.getInventory().setItemInMainHand(null);
 							player.playEffect(EntityEffect.TOTEM_RESURRECT);
 							double addHealth = this.plugin.getConfig().getDouble("Custom_System.Totem_of_Undying.Add_Health");
-							if (addHealth == null || addHealth < 0.0) {
+							if (addHealth < 0.0) {
 								addHealth = 2.0;
 							}
 							health.setBaseValue(baseHealth + addHealth);
