@@ -21,7 +21,7 @@ Custom_System:
   Health_System:
     Enable: true
     Reduce_Health: 2.0
-    Force_Health: # Use this if you use Plugin AuraSkill.
+    Force_Health: # Use this if you use Plugin AuraSkill. (Not Implemented)
       Enable: false
       Max_Health: 20.0
 
