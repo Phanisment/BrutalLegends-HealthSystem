@@ -17,14 +17,12 @@ Custom_System:
   Evoker_Drops:
     Enable: true
     Chance: 0.1
-    # Custom Item in next update.
+    # Custom Item is next update(mybe).
   Health_System:
     Enable: true
-    # Use this if you use Plugin AuraSkill.
-    Force_Health:
+    Force_Health: # Use this if you use Plugin AuraSkill.
       Enable: false
       Max_Health: 20.0
-      
 
 System_Message:
   Max_Use_Totem: "&4&lBRUTAL &4&l/&r You can't use Totem of Undying more than 20 Health Point."
