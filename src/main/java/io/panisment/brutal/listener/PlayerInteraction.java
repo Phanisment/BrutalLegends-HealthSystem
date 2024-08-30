@@ -19,7 +19,7 @@ public class PlayerInteraction implements Listener {
 	private final HealthSystem plugin;
 	
 	public PlayerInteraction(HealthSystem plugin) {
-		this.plugin = plugin
+		this.plugin = plugin;
 	}
 	
 	@EventHandler
