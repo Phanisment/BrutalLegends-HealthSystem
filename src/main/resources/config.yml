@@ -12,6 +12,7 @@ Custom_System:
   Totem_of_Undying:
     Enable: true
     Add_Health: 2.0
+    Max_Health: 20.0
     Max_Use_Per_Hours: 3 # set 0 to disable
     Maximum_Health_Player: 20 # = 10 Health Max Point
   Evoker_Drops:
