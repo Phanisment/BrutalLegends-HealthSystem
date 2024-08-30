@@ -3,10 +3,10 @@
 
 > Tested only on Paper 1.20.1, I don't know if it can use higher version or not.
 
+---
 
 > ![NOTE]
 > If the update takes a long time, please excuse me because this is my first plugin that I made via only handphone.
-
 
 ## Features
 - Health reduce when death
