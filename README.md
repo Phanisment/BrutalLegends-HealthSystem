@@ -49,3 +49,7 @@
 
 `/pardon <player>`
 > Unban player.
+
+## Permission
+`healthsystem.admin`
+> Permisson for reload command.
